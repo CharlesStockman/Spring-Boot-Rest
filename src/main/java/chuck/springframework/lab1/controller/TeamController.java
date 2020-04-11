@@ -27,7 +27,7 @@ public class TeamController {
         TeamService teamService;
 
         /**
-         * Retruns a list of all the teams.
+         * Returns a list of all the teams.
          * 
          * @return   Returns the JSON for 0 or more teams
          */
@@ -38,7 +38,7 @@ public class TeamController {
 
             List<Team> teams = teamService.getTeams();
 
-            log.info("Charles Stockman: Exited getTeamas");
+            log.info("Charles Stockman: Exited getTeams");
 
             return teams;
 
@@ -46,12 +46,12 @@ public class TeamController {
         }
 
         /**
-         * Returns a sngle team 
+         * Returns a single team 
          * 
          * @param id        The id of the team to be returned
          * @return          Returns the JSON for the team specified by the parameter id
          * 
-         * @excepiton       The id could be matched with a team in the database
+         * @exception       The id could be matched with a team in the database
          * 
          */
         @GetMapping("/team/{id}")
