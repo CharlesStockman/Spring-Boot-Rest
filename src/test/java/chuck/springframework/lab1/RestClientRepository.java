@@ -1,6 +1,7 @@
 package chuck.springframework.lab1;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.LinkedHashMap;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import chuck.springframework.lab1.domain.Team;
 import chuck.springframework.lab1.util.RestMessages;
+import org.junit.jupiter.api.Assertions.*;
 
 /**
  * The purpose of this class it to test the rest messages for the application.  This involves the following
@@ -56,9 +58,8 @@ public class RestClientRepository {
      * @param 
      */
     private void verifyTeam(Team team) {
-    	System.out.println("The team is " + team.toString());
     	assertNotNull(team, "No Data for the team was returned from the function call");
-    	assertNotNull(team.getId(), " The id was null, so no valid data was returned.");
+    	assertTrue(team.getName().equals("GlobeTrooters"));
     }
     
 

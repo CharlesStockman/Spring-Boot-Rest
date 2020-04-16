@@ -58,7 +58,7 @@ public class RestMessages {
     }
     
 	public Team getTeam(int teamId) {
-		String url = "http://localhost:8080/team/1";
+		String url = "http://localhost:8080/teams/1";
 		
         ResponseEntity<Team> responseEntity = restTemplate.exchange(url, HttpMethod.GET, buildResponseEntity(MediaType.APPLICATION_JSON), Team.class );
         
