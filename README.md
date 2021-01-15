@@ -50,7 +50,7 @@ run mvn spring-boot:run
 
 ## Create a separate war file and deploy using the tomcat GUI
 
-# Tomcat
+### Tomcat
 Shoud have an user with roles: manager-gui
 
 ### POM File
@@ -111,12 +111,12 @@ Should have manager-gui and manager-script
 ### maven
 In server.xml for mavent create an unique id and provide the username and password ( that contains the manager-gui and manager-script ) to login into the server
 
-<code>
+<pre>
   <server>
       <id>TomcatServer</id>
       <username>admin</username>
       <password>password</password>
   </server>
-</code>
+</pre>
 
 
