@@ -113,9 +113,9 @@ In server.xml for mavent create an unique id and provide the username and passwo
 
 <pre>
   <server>
-      <id>TomcatServer</id>
-      <username>admin</username>
-      <password>password</password>
+      &lt;id&gt;TomcatServer&lt;&gt;
+      &lt;username>admin&lt;/username&gt;
+      &lt;password>password&lt;/password&gt;
   </server>
 </pre>
 
