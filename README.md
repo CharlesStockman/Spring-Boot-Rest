@@ -109,7 +109,7 @@ public class WarInitializerApplication extends SpringBootServletInitializer {
 Should have manager-gui and manager-script
 
 ### maven
-In server.xml for mavent create an unique id and provide the username and password ( that contains the manager-gui and manager-script ) to login into the server
+In server.xml for maven create an unique id and provide the username and password ( that contains the manager-gui and manager-script ) to login into the server
 
 <pre>
   <server>
@@ -118,5 +118,23 @@ In server.xml for mavent create an unique id and provide the username and passwo
       &lt;password>password&lt;/password&gt;
   </server>
 </pre>
+
+In the pom.xml add the following 
+   &lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId>
+   
+   &lt;plugin&lt;
+      &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;
+      &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;
+      &lt;version&gt;2.2&lt;/version&gt;
+      &lt;configuration&gt;
+            &lt;url&gt;http://localhost:8080/manager/text&lt;/url&gt;
+            &lt;server&gt;TomcatServer&lt;/server&gt;
+            &lt;path&gt;/rest-1&lt;/path&gt;
+       &lt;/configuration&gt;
+  &lt;/plugin&gt;
+
+
+
+
 
 
