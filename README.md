@@ -6,12 +6,12 @@ Notes
 
 1. SpringApplication -- bootstraps a Spring Application from a Java Main Method
 
-      Does the following:
-         creates an AppliatoinContextInstance if important,
-         registers a CommandLineProeprty Source to expose command line arguments as Spring Properties
-         refereshes the ApplicationConext
-         loads all single beans
-         triggers any CommandLineRunner Bean
+      * Does the following:
+         * creates an AppliatonContextInstance
+         * registers a CommandLineProeprty Source to expose command line arguments as Spring Properties
+         * refereshes the ApplicationConext
+         * loads all single beans
+         * triggers any CommandLineRunner Bean
   
 2. SpringApplicationBuilder is a builder for the Spring Application and ApplicationContext.  For example 
   .bannerMode(Banner.Model.OFF), logStartupInfo.
