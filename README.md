@@ -63,8 +63,9 @@ Add the following <packaging>war</packaging> to tell maven to produce a war file
 
 ### Main File
 
+```
 /**
- * The Start point of the Lab
+ * The Starting point of the Lab
  */
  
 @SpringBootApplication
@@ -102,7 +103,8 @@ public class WarInitializerApplication extends SpringBootServletInitializer {
         }
 
 }
-
+```
+     
 ## Deploy the war file using cargo
 
 ### Tomcat 
